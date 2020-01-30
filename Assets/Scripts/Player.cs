@@ -19,7 +19,8 @@ namespace Completed
 		public AudioClip eatSound2;					//2 of 2 Audio clips to play when player collects a food object.
 		public AudioClip drinkSound1;				//1 of 2 Audio clips to play when player collects a soda object.
 		public AudioClip drinkSound2;				//2 of 2 Audio clips to play when player collects a soda object.
-		public AudioClip gameOverSound;				//Audio clip to play when player dies.
+		public AudioClip gameOverSound;             //Audio clip to play when player dies.
+		public InputController ic;
 		
 		private Animator animator;					//Used to store a reference to the Player's animator component.
 		private int food;                           //Used to store player food points total during level.
@@ -65,10 +66,10 @@ namespace Completed
 #if UNITY_STANDALONE || UNITY_WEBPLAYER
 			
 			//Get input from the input manager, round it to an integer and store in horizontal to set x axis move direction
-			horizontal = (int) (Input.GetAxisRaw ("Horizontal"));
-			
+			horizontal = (int) (Input.GetAxisRaw (ic.horizontal));
+
 			//Get input from the input manager, round it to an integer and store in vertical to set y axis move direction
-			vertical = (int) (Input.GetAxisRaw ("Vertical"));
+			vertical = (int)(Input.GetAxisRaw(ic.vertical));
 			
 			//Check if moving horizontally, if so set vertical to zero.
 			if(horizontal != 0)

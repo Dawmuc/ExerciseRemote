@@ -9,6 +9,8 @@ namespace Completed
 	
 	public class GameManager : MonoBehaviour
 	{
+		public static int playerExitCount = 0;
+
 		public float levelStartDelay = 2f;						//Time to wait before starting level, in seconds.
 		public float turnDelay = 0.1f;							//Delay between each Player turn.
 		public int playerFoodPoints = 100;						//Starting value for Player food points.

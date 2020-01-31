@@ -8,6 +8,8 @@ namespace Completed
 	//Player inherits from MovingObject, our base class for objects that can move, Enemy also inherits from this.
 	public class Player : MovingObject
 	{
+		[SerializeField] private Color playerColor;
+
 		public float restartLevelDelay = 1f;		//Delay time in seconds to restart level.
 		public int pointsPerFood = 10;				//Number of points to add to player food points when picking up a food object.
 		public int pointsPerSoda = 20;				//Number of points to add to player food points when picking up a soda object.
@@ -23,7 +25,7 @@ namespace Completed
 		public InputController ic;
 		
 		private Animator animator;					//Used to store a reference to the Player's animator component.
-		private int food;                           //Used to store player food points total during level.
+		private static int food;                           //Used to store player food points total during level.
 #if UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
         private Vector2 touchOrigin = -Vector2.one;	//Used to store location of screen touch origin for mobile controls.
 #endif
@@ -32,6 +34,9 @@ namespace Completed
 		//Start overrides the Start function of MovingObject
 		protected override void Start ()
 		{
+			//Change la couleur du joueur
+			GetComponent<SpriteRenderer>().color = playerColor;
+
 			//Get a component reference to the Player's animator component
 			animator = GetComponent<Animator>();
 			
@@ -223,9 +228,24 @@ namespace Completed
 		//Restart reloads the scene when called.
 		private void Restart ()
 		{
+			//Désactive les collisions
+			GetComponent<Collider2D>().enabled = false;
+
+			//Un joueur est sorti
+			GameManager.playerExitCount++;
+
+			//Deux joueurs minimum pour finir le niveau
+			if (GameManager.playerExitCount < 2)
+			{
+				return;
+			}
+
 			//Load the last scene loaded, in this case Main, the only scene in the game. And we load it in "Single" mode so it replace the existing one
-            //and not load all the scene object in the current scene.
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+			//and not load all the scene object in the current scene.
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+
+			//Reset du nombre de joueurs sortis
+			GameManager.playerExitCount = 0;
 		}
 		
 		

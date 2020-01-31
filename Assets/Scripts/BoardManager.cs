@@ -164,7 +164,14 @@ namespace Completed
 			LayoutObjectAtRandom (enemyTiles, enemyCount, enemyCount);
 			
 			//Instantiate the exit tile in the upper right hand corner of our game board
-			Instantiate (exit, new Vector3 (currentColumns - 1, currentRows - 1, 0f), Quaternion.identity);
+			Instantiate (exit, new Vector3 ((currentColumns/2) - 1, (currentRows/2) - 1, 0f), Quaternion.identity);
+
+			GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+			for (int i = 0; i < players.Length; i++)
+			{
+				players[i].transform.position = new Vector3(-(currentColumns / 2) + i, -(currentRows / 2), 0);
+			}
 		}
 	}
 }

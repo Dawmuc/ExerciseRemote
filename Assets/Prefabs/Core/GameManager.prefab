@@ -72,34 +72,34 @@ MonoBehaviour:
   foodCount:
     minimum: 1
     maximum: 5
-  exit: {fileID: 110520, guid: cb0f3020bafec423aa31d0e491c4b811, type: 3}
+  exit: {fileID: 110520, guid: 2112c0f1a3c06484a9872133ca127461, type: 3}
   floorTiles:
-  - {fileID: 106160, guid: 038998774947c4a8fa170d5b4492a7dd, type: 3}
-  - {fileID: 137908, guid: 41775b29042354678bcd58bb1a75871e, type: 3}
-  - {fileID: 125636, guid: 74398dca0c1f64f34aab8ba7bdb6c527, type: 3}
-  - {fileID: 177044, guid: ed4c829589732490894350b134530050, type: 3}
-  - {fileID: 109612, guid: 04993e7a7b0514f0c8857ff106529ce1, type: 3}
-  - {fileID: 127736, guid: 4cdf8ac85eff446d0a8fefbdc8c6569f, type: 3}
-  - {fileID: 110520, guid: 5535fd6cd705e4a79a1d5a4f114de5dc, type: 3}
-  - {fileID: 110520, guid: c18e9692903814865aa9a855aaa66df5, type: 3}
+  - {fileID: 106160, guid: 312cf131a295434469be03cff5228cc8, type: 3}
+  - {fileID: 137908, guid: d83c29eb0d9c0444eb7888e154a5c4e6, type: 3}
+  - {fileID: 125636, guid: 53d881200473768458100cff21d6fbce, type: 3}
+  - {fileID: 177044, guid: 4c6bed29ddfde5047993935260747a4d, type: 3}
+  - {fileID: 109612, guid: 0791c820284e9ed4f83877b2eb55ea47, type: 3}
+  - {fileID: 127736, guid: b5ca26b2a5440374193d2072d5975ddd, type: 3}
+  - {fileID: 110520, guid: ed194bf9aa886a745ad6d82c75b738ca, type: 3}
+  - {fileID: 110520, guid: c7434fe3767845542b05b230475731d3, type: 3}
   wallTiles:
-  - {fileID: 110520, guid: 2570048905bd94d6f8a99d13b80daf90, type: 3}
-  - {fileID: 110520, guid: b86334000bc0f47ba8dd33ea88cfcdb1, type: 3}
-  - {fileID: 110520, guid: 01ca47a83ebe24ca5a2f6b1d6dcd7481, type: 3}
-  - {fileID: 110520, guid: 022eda2f1f0cb45e28ff6840b68928bc, type: 3}
-  - {fileID: 110520, guid: e1816487b15cd4c5fbd9587521e068ca, type: 3}
-  - {fileID: 110520, guid: 5ddc2d7828b2d462286f09274199ad9a, type: 3}
-  - {fileID: 110520, guid: 64139c47b57e34c5fa97fd79f8d25244, type: 3}
-  - {fileID: 110520, guid: 741804431f4d341cdae1f15b3896aeff, type: 3}
+  - {fileID: 110520, guid: f9f10e343b8619749b6315e3278dfae5, type: 3}
+  - {fileID: 110520, guid: a7a7e4cfff878ab4682f3c6fceb08f8f, type: 3}
+  - {fileID: 110520, guid: 766a777ddefe7424bb59003025cf7f15, type: 3}
+  - {fileID: 110520, guid: 5876c725da795ef4d8b717344752cc82, type: 3}
+  - {fileID: 110520, guid: 53b237ee13df2604294271e9f607e21e, type: 3}
+  - {fileID: 110520, guid: 3bd570775958e364290c3785985d9f4a, type: 3}
+  - {fileID: 110520, guid: ca2256b1495c76b4baa5cc9d4dcf3dcd, type: 3}
+  - {fileID: 110520, guid: bf2d05e43c6328c45af83c4d5f587b58, type: 3}
   - {fileID: 110520, guid: a77ecc4b0251fdf4b99f15d71e00167c, type: 3}
   foodTiles:
-  - {fileID: 110520, guid: ad25a4e752915438e9f55a35bedacf1f, type: 3}
-  - {fileID: 110520, guid: 46e8bf4bf645a47e3ae1b60c7e18418c, type: 3}
+  - {fileID: 110520, guid: 4c01343f4ca109148b3d95022ec008aa, type: 3}
+  - {fileID: 110520, guid: fdee0552d291f28439c450db1435c58a, type: 3}
   - {fileID: 110520, guid: 0c037fef9facf6847993a7365adab53d, type: 3}
   enemyTiles:
-  - {fileID: 161064, guid: 089a2f2c322ea40f9afdfaba0550c6d3, type: 3}
-  - {fileID: 195068, guid: ebfba08a213d34c46ba2b1947aeaea83, type: 3}
+  - {fileID: 195068, guid: f2d2acb8ea6f71d4eab23d9ca7850a68, type: 3}
+  - {fileID: 161064, guid: 674c65cc1b5f7b045b618d08e14fc504, type: 3}
   outerWallTiles:
-  - {fileID: 110520, guid: 7094f72151ec74f569c4e03f1ec0f8e7, type: 3}
-  - {fileID: 110520, guid: b0ace21a29149403094422fb3bd96aa9, type: 3}
-  - {fileID: 110520, guid: e85c94355cc4641da919bd5d0ac956d4, type: 3}
+  - {fileID: 110520, guid: 7ed75291a34a7d74d93f2680e95e5da0, type: 3}
+  - {fileID: 110520, guid: 8c97ea2892699ae4090a84a4893ab14e, type: 3}
+  - {fileID: 110520, guid: 61f4e16762ff5b14b989f338bbbd68f6, type: 3}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5e6683966212341a8b95a424b64fa7, type: 3}
   m_Name: J2
   m_EditorClassIdentifier: 
-  horizontal: Horizontal2
-  vertical: Vertical2
+  horizontal: HorizontalP2
+  vertical: VerticalP2

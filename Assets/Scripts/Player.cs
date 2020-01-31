@@ -70,17 +70,16 @@ namespace Completed
 			if(!GameManager.instance.playersTurn) return;
 			
 			int horizontal = 0;  	//Used to store the horizontal move direction.
-			int vertical = 0;		//Used to store the vertical move direction.
-			
+			int vertical = 0;       //Used to store the vertical move direction.
+
 			//Check if we are running either in the Unity editor or in a standalone build.
 #if UNITY_STANDALONE || UNITY_WEBPLAYER
-			
-			//Get input from the input manager, round it to an integer and store in horizontal to set x axis move direction
 
-			horizontal = (int) inputPlayer.GetAxis(RewiredConsts.Action.HorizontalMove);
+			//Get input from the input manager, round it to an integer and store in horizontal to set x axis move direction
+			horizontal = (int) inputPlayer.GetAxis(ic.horizontal);
 			
 			//Get input from the input manager, round it to an integer and store in vertical to set y axis move direction
-			vertical = (int) inputPlayer.GetAxis(RewiredConsts.Action.VerticalMove);
+			vertical = (int) inputPlayer.GetAxis(ic.vertical);
 
 			//Check if moving horizontally, if so set vertical to zero.
 			if (horizontal != 0)
